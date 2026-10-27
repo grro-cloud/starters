@@ -20,7 +20,7 @@ server, no token or network needed).
 ## Deploy on Grro
 
 Pick **Telegram bot** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `telegram-bot` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `telegram-bot` and the `base` builder.
 Grro builds it with Paketo Node.js and runs `npm start` (`node main.js`). Health check: `/healthz`.
 
 Set scaling to **minScale 1 and maxScale 1**. Long polling needs the process to stay up
@@ -45,5 +45,5 @@ the bot retries with a growing delay.
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/telegram-bot my-bot
+npx degit grro-cloud/starters/telegram-bot my-bot
 ```

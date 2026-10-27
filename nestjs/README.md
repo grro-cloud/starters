@@ -18,7 +18,7 @@ Tests: `npm test` (boots the app on a random port and calls it).
 ## Deploy on Grro
 
 Pick **NestJS** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `nestjs` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `nestjs` and the `base` builder.
 Grro builds it with Paketo Node.js (`BP_NODE_RUN_SCRIPTS=build` in `project.toml`),
 then `npm start` runs `node dist/main.js`. Health check: `/healthz`.
 
@@ -34,5 +34,5 @@ Environment variables: `PORT` (set by Grro, defaults to 8080). Nothing else is r
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/nestjs my-api
+npx degit grro-cloud/starters/nestjs my-api
 ```

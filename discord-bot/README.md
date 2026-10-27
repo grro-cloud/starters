@@ -23,7 +23,7 @@ Type `/ping` in your server. Tests: `npm test` (no token needed).
 ## Deploy on Grro
 
 Pick **Discord bot** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `discord-bot` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `discord-bot` and the `base` builder.
 Grro builds it with Paketo Node.js and runs `npm start` (`node main.js`). Health check: `/healthz`.
 
 Set scaling to **minScale 1 and maxScale 1**. The bot keeps a gateway connection open, so it
@@ -48,5 +48,5 @@ is logged and it retries with a growing delay. `GET /` shows the bot state.
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/discord-bot my-bot
+npx degit grro-cloud/starters/discord-bot my-bot
 ```

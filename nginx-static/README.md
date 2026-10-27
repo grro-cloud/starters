@@ -16,7 +16,7 @@ Smoke test: `./smoke.sh`.
 ## Deploy on Grro
 
 Pick **Static site** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `nginx-static` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `nginx-static` and the `base` builder.
 Grro builds it with Paketo Web Servers. `project.toml` sets `BP_WEB_SERVER=nginx` and
 `BP_WEB_SERVER_ROOT=public`, and the buildpack writes an nginx config that listens on `$PORT`.
 Health check: `/healthz`, a static file that says `ok`.
@@ -41,5 +41,5 @@ them in.
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/nginx-static my-site
+npx degit grro-cloud/starters/nginx-static my-site
 ```

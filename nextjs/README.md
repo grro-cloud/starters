@@ -18,7 +18,7 @@ Tests: `npm test` (builds, starts the production server and calls it).
 ## Deploy on Grro
 
 Pick **Next.js** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `nextjs` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `nextjs` and the `base` builder.
 Grro builds it with Paketo Node.js: `project.toml` sets `BP_NODE_RUN_SCRIPTS=build` so
 `next build` runs during the build, then `npm start` runs `next start -H 0.0.0.0 -p $PORT`.
 Health check: `/healthz`.
@@ -45,5 +45,5 @@ with `NODE_ENV=development`, and `next build` fails to prerender with that value
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/nextjs my-app
+npx degit grro-cloud/starters/nextjs my-app
 ```

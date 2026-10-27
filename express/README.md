@@ -17,7 +17,7 @@ Open http://localhost:8080. Tests: `npm test`.
 ## Deploy on Grro
 
 Pick **Express** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `express` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `express` and the `base` builder.
 Grro builds it with Paketo Node.js and runs `npm start` (`node server.js`). Health check: `/healthz`.
 
 Environment variables: `PORT` (set by Grro, defaults to 8080). Nothing else is required.
@@ -32,5 +32,5 @@ Environment variables: `PORT` (set by Grro, defaults to 8080). Nothing else is r
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/express my-app
+npx degit grro-cloud/starters/express my-app
 ```

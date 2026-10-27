@@ -41,7 +41,7 @@ minScale 1 and maxScale 1; everything else can scale to zero.
 Deploy it from the Grro catalogue, or copy one folder into a new repository:
 
 ```sh
-npx degit grrocloud/starters/fastapi my-app
+npx degit grro-cloud/starters/fastapi my-app
 ```
 
 Each folder's README explains how to run it locally, how it deploys on Grro and where to edit.

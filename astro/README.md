@@ -19,7 +19,7 @@ Tests: `npm test` (builds and checks the output).
 ## Deploy on Grro
 
 Pick **Astro** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `astro` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `astro` and the `base` builder.
 Grro builds it with Paketo Web Servers: `project.toml` runs `npm run build` and serves `dist/`
 with nginx on `$PORT`. Health check: `/healthz`, a static file in `public/`.
 
@@ -40,5 +40,5 @@ in `project.toml` as `[[io.buildpacks.build.env]]` entries.
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/astro my-site
+npx degit grro-cloud/starters/astro my-site
 ```

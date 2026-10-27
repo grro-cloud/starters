@@ -22,7 +22,7 @@ Tests: `DEBUG=1 python manage.py test tests`.
 ## Deploy on Grro
 
 Pick **Django** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `django` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `django` and the `base` builder.
 Grro builds it with Paketo Python. The `Procfile` runs `start.sh`, which applies migrations
 and starts gunicorn on `$PORT`. Health check: `/healthz`.
 
@@ -51,5 +51,5 @@ The Paketo base run image has no system SQLite library, so `requirements.txt` ad
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/django my-site
+npx degit grro-cloud/starters/django my-site
 ```

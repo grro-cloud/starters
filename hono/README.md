@@ -18,7 +18,7 @@ PORT=8080 npm start
 ## Deploy on Grro
 
 Pick **Hono** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `hono` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `hono` and the `base` builder.
 Grro builds it with Paketo Node.js. `project.toml` sets `BP_NODE_RUN_SCRIPTS=build`, so `tsc`
 runs during the build, then `npm start` runs `node dist/server.js`. Health check: `/healthz`.
 
@@ -34,5 +34,5 @@ Environment variables: `PORT` (set by Grro, defaults to 8080). Nothing else is r
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/hono my-app
+npx degit grro-cloud/starters/hono my-app
 ```

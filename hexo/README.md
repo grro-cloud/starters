@@ -18,7 +18,7 @@ Tests: `npm test` (generates the site and checks the output).
 ## Deploy on Grro
 
 Pick **Hexo** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `hexo` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `hexo` and the `base` builder.
 Grro builds it with Paketo Web Servers: `project.toml` runs `npm run build` (`hexo generate`)
 and serves `public/` with nginx on `$PORT`. Health check: `/healthz`, a static file in `source/`.
 
@@ -38,5 +38,5 @@ Environment variables: `PORT` (set by Grro). Nothing is read at runtime.
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/hexo my-blog
+npx degit grro-cloud/starters/hexo my-blog
 ```

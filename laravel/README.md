@@ -25,7 +25,7 @@ Writable state lives in `/tmp/laravel` locally too. Set `LARAVEL_WRITABLE_PATH` 
 ## Deploy on Grro
 
 Pick **Laravel** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `laravel` and the **`full`** builder
+`https://github.com/grro-cloud/starters` with path `laravel` and the **`full`** builder
 (Paketo PHP needs the full stack). Health check: `/healthz`.
 
 How the build works:
@@ -63,5 +63,5 @@ Migrations do not run on start. With a real database, run `php artisan migrate -
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/laravel my-app
+npx degit grro-cloud/starters/laravel my-app
 ```

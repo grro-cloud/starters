@@ -18,7 +18,7 @@ Tests: `npm test` (builds and checks the output).
 ## Deploy on Grro
 
 Pick **VitePress** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `vitepress` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `vitepress` and the `base` builder.
 Grro builds it with Paketo Web Servers: `project.toml` runs `npm run build` and serves
 `docs/.vitepress/dist` with nginx on `$PORT`. Health check: `/healthz`, a static file in
 `docs/public/`.
@@ -41,5 +41,5 @@ open advisories for its dev server. Drop the override once VitePress 2 is stable
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/vitepress my-docs
+npx degit grro-cloud/starters/vitepress my-docs
 ```

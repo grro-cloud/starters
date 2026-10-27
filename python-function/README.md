@@ -19,7 +19,7 @@ Tests: `python3 -m unittest -v` or `./smoke.sh`.
 ## Deploy on Grro
 
 Pick **Python function** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `python-function` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `python-function` and the `base` builder.
 Grro builds it with Paketo Python, sets `PORT`, and checks `/healthz`.
 
 Environment variables: `PORT` (set by Grro, defaults to 8080). Nothing else is required.
@@ -34,5 +34,5 @@ Environment variables: `PORT` (set by Grro, defaults to 8080). Nothing else is r
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/python-function my-function
+npx degit grro-cloud/starters/python-function my-function
 ```

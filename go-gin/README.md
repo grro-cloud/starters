@@ -16,7 +16,7 @@ Tests: `go test ./...`.
 ## Deploy on Grro
 
 Pick **Go + Gin** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `go-gin` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `go-gin` and the `base` builder.
 Grro builds it with Paketo Go (`go build` of this folder) and runs the binary. Health check:
 `/healthz`.
 
@@ -34,5 +34,5 @@ Grro builds it with Paketo Go (`go build` of this folder) and runs the binary. H
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/go-gin my-api
+npx degit grro-cloud/starters/go-gin my-api
 ```

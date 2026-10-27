@@ -18,7 +18,7 @@ Tests: `npm test` (builds and checks the output).
 ## Deploy on Grro
 
 Pick **React + Vite** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `react-vite` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `react-vite` and the `base` builder.
 Grro builds it with Paketo Web Servers. `project.toml` tells it to run `npm run build`,
 then serve `dist/` with nginx on `$PORT`. Unknown paths fall back to `index.html`
 (`BP_WEB_SERVER_ENABLE_PUSH_STATE`), so client side routing works.
@@ -42,5 +42,5 @@ entries if you need them.
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/react-vite my-app
+npx degit grro-cloud/starters/react-vite my-app
 ```

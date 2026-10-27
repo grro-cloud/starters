@@ -19,7 +19,7 @@ PORT=8080 npm start
 ## Deploy on Grro
 
 Pick **Elysia** in the Grro template catalogue, or create a project from
-`https://github.com/grrocloud/starters` with path `elysia` and the `base` builder.
+`https://github.com/grro-cloud/starters` with path `elysia` and the `base` builder.
 Grro builds it with Paketo Node.js (`BP_NODE_RUN_SCRIPTS=build` in `project.toml`),
 then `npm start` runs `node dist/server.js`. Health check: `/healthz`.
 
@@ -36,5 +36,5 @@ Bun specific APIs (such as `Bun.file`) are not available on Node.js. Use `node:f
 ## Use this folder on its own
 
 ```sh
-npx degit grrocloud/starters/elysia my-app
+npx degit grro-cloud/starters/elysia my-app
 ```

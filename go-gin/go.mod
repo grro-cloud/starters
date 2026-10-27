@@ -1,4 +1,4 @@
-module github.com/grrocloud/starters/go-gin
+module github.com/grro-cloud/starters/go-gin
 
 go 1.26.0
 
