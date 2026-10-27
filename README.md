@@ -26,7 +26,6 @@ Every starter:
 | [`discord-bot`](discord-bot) | Discord bot with discord.js and a `/ping` slash command | base |
 | [`react-vite`](react-vite) | React single page app built with Vite, served by nginx | base |
 | [`astro`](astro) | Astro static site, served by nginx | base |
-| [`astroship`](astroship) | Astroship marketing site theme (GPL-3.0), served by nginx | base |
 | [`hexo`](hexo) | Hexo blog, served by nginx | base |
 | [`vitepress`](vitepress) | VitePress docs site, served by nginx | base |
 | [`nginx-static`](nginx-static) | Plain HTML and CSS, served by nginx | base |
@@ -49,5 +48,4 @@ Each folder's README explains how to run it locally, how it deploys on Grro and 
 
 ## License
 
-MIT, see [LICENSE](LICENSE), except [`astroship`](astroship), which is GPL-3.0 like the
 upstream Astroship theme it is based on (see its own `LICENSE`).
