@@ -48,4 +48,4 @@ Each folder's README explains how to run it locally, how it deploys on Grro and 
 
 ## License
 
-upstream Astroship theme it is based on (see its own `LICENSE`).
+MIT, see [LICENSE](LICENSE).
