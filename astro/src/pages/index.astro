@@ -1,0 +1,15 @@
+---
+import Base from "../layouts/Base.astro";
+
+const built = new Date().toISOString().slice(0, 10);
+---
+
+<Base title="Astro on Grro">
+  <h1>Astro is running on Grro</h1>
+  <p>
+    A static Astro site served by nginx. Edit <code>src/pages/index.astro</code> to change this page,
+    or add more <code>.astro</code> and <code>.md</code> files in <code>src/pages/</code>.
+  </p>
+  <p><a href="/about/">About this starter</a></p>
+  <small>Built on {built}.</small>
+</Base>

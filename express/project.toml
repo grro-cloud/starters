@@ -1,0 +1,5 @@
+# Buildpack settings for Grro (Paketo Node.js on the base builder).
+# The Node.js version comes from "engines" in package.json and the start command
+# from the "start" script.
+[_]
+schema-version = "0.2"

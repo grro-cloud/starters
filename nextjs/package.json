@@ -1,0 +1,26 @@
+{
+  "name": "grro-nextjs-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Next.js starter for Grro",
+  "scripts": {
+    "dev": "NEXT_TELEMETRY_DISABLED=1 next dev -p ${PORT:-3000}",
+    "build": "NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 next build",
+    "start": "NEXT_TELEMETRY_DISABLED=1 next start -H 0.0.0.0 -p ${PORT:-8080}",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2"
+  }
+}

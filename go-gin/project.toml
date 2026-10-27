@@ -1,0 +1,9 @@
+# Buildpack settings for Grro (Paketo Go on the base builder).
+# The Go version comes from go.mod. The buildpack compiles the main package in
+# this folder and runs the binary as the web process.
+[_]
+schema-version = "0.2"
+
+[[io.buildpacks.build.env]]
+name = "BP_GO_TARGETS"
+value = "."

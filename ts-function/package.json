@@ -1,0 +1,19 @@
+{
+  "name": "grro-ts-function-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TypeScript function starter for Grro",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "test": "tsc && node --test \"dist/**/*.test.js\""
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "7.0.2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "grro-discord-bot-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Discord bot (discord.js, slash commands) starter for Grro",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "discord.js": "14.27.0"
+  }
+}

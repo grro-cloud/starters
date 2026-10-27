@@ -1,0 +1,22 @@
+{
+  "name": "grro-vitepress-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "VitePress docs site starter for Grro",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "test": "npm run build && node --test"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  },
+  "overrides": {
+    "vite": "6.4.5"
+  }
+}

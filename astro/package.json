@@ -1,0 +1,19 @@
+{
+  "name": "grro-astro-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Astro static site starter for Grro",
+  "scripts": {
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
+    "test": "npm run build && node --test"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "astro": "7.4.2"
+  }
+}

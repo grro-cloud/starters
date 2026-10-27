@@ -1,0 +1,16 @@
+{% load static %}<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Django on Grro</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <main>
+    <h1>Django is running on Grro</h1>
+    <p>Django {{ django_version }}. Edit <code>templates/index.html</code> to change this page.</p>
+    <p>The admin lives at <a href="/admin/">/admin/</a>. Create a user with <code>python manage.py createsuperuser</code>.</p>
+  </main>
+</body>
+</html>

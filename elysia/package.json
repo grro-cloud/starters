@@ -1,0 +1,24 @@
+{
+  "name": "grro-elysia-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Elysia on Node.js starter for Grro",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "dev": "tsc -p tsconfig.build.json && node --watch dist/server.js",
+    "test": "tsc && node --test \"dist/**/*.test.js\""
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "@elysiajs/node": "1.4.5",
+    "elysia": "1.4.30"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "7.0.2"
+  }
+}
