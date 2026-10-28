@@ -1,0 +1,51 @@
+{
+  "name": "grro-docusaurus-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Docusaurus docs site starter for Grro, served by nginx",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "dev": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear",
+    "typecheck": "tsc",
+    "test": "npm run typecheck && npm run build && node --test"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/faster": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@mdx-js/react": "3.1.1",
+    "clsx": "2.1.1",
+    "prism-react-renderer": "2.4.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/tsconfig": "3.10.2",
+    "@docusaurus/types": "3.10.2",
+    "@types/react": "19.3.0",
+    "typescript": "6.0.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "overrides": {
+    "tinypool": "2.2.0",
+    "serialize-javascript": "7.1.4"
+  }
+}

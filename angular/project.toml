@@ -1,0 +1,33 @@
+# Buildpack settings for Grro (Paketo Web Servers on the base builder).
+# Node.js runs "npm run build" (ng build) at build time, then nginx serves dist/ on $PORT.
+[_]
+schema-version = "0.2"
+
+[[io.buildpacks.build.env]]
+name = "BP_NODE_RUN_SCRIPTS"
+value = "build"
+
+[[io.buildpacks.build.env]]
+name = "NG_CLI_ANALYTICS"
+value = "false"
+
+[[io.buildpacks.build.env]]
+name = "BP_WEB_SERVER"
+value = "nginx"
+
+[[io.buildpacks.build.env]]
+name = "BP_WEB_SERVER_ROOT"
+value = "dist"
+
+# Send unknown paths to index.html so client side routing works.
+[[io.buildpacks.build.env]]
+name = "BP_WEB_SERVER_ENABLE_PUSH_STATE"
+value = "true"
+
+# Grro can run the app as any user id, and the app folder is not writable then.
+# The buildpack normally fills in nginx.conf in place at startup, so point that step
+# at a file that does not exist (it then does nothing). The Procfile writes the final
+# config to /tmp and starts nginx with it.
+[[io.buildpacks.build.env]]
+name = "BPE_OVERRIDE_EXECD_CONF"
+value = "/tmp/nginx.conf"

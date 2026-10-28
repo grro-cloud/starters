@@ -1,0 +1,32 @@
+{
+  "name": "grro-angular-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Angular single page app starter for Grro, served by nginx",
+  "scripts": {
+    "ng": "ng",
+    "dev": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "npm run build && node --test"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "@angular/common": "22.2.3",
+    "@angular/compiler": "22.2.3",
+    "@angular/core": "22.2.3",
+    "@angular/forms": "22.2.3",
+    "@angular/platform-browser": "22.2.3",
+    "@angular/router": "22.2.3",
+    "rxjs": "7.8.2",
+    "tslib": "2.8.1"
+  },
+  "devDependencies": {
+    "@angular/build": "22.2.5",
+    "@angular/cli": "22.2.5",
+    "@angular/compiler-cli": "22.2.3",
+    "typescript": "6.0.3"
+  }
+}

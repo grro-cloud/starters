@@ -15,19 +15,27 @@ Every starter:
 | --- | --- | --- |
 | [`python-function`](python-function) | One Python `handler(request)` function, standard library server | base |
 | [`fastapi`](fastapi) | FastAPI with uvicorn | base |
+| [`flask`](flask) | Flask 3 with gunicorn | base |
 | [`django`](django) | Django 5.2 LTS, gunicorn, WhiteNoise, SQLite or `DATABASE_URL` | base |
 | [`express`](express) | Express 5 on Node.js 24 | base |
 | [`hono`](hono) | Hono in TypeScript on Node.js | base |
+| [`fastify`](fastify) | Fastify 5 on Node.js 24 | base |
 | [`nestjs`](nestjs) | NestJS 12 | base |
 | [`nextjs`](nextjs) | Next.js 16, App Router | base |
+| [`nuxt`](nuxt) | Nuxt 4 with Vue, server rendered on Node.js | base |
+| [`sveltekit`](sveltekit) | SvelteKit 3 with Svelte 5 and adapter-node | base |
+| [`react-router`](react-router) | React Router 8 framework mode (formerly Remix), server rendered | base |
 | [`ts-function`](ts-function) | One TypeScript handler (web `Request` in, `Response` out) | base |
 | [`elysia`](elysia) | Elysia on Node.js through `@elysiajs/node` | base |
 | [`telegram-bot`](telegram-bot) | Telegram bot with grammY, long polling | base |
 | [`discord-bot`](discord-bot) | Discord bot with discord.js and a `/ping` slash command | base |
 | [`react-vite`](react-vite) | React single page app built with Vite, served by nginx | base |
+| [`vue-vite`](vue-vite) | Vue 3 single page app built with Vite, served by nginx | base |
+| [`angular`](angular) | Angular 22 single page app, served by nginx | base |
 | [`astro`](astro) | Astro static site, served by nginx | base |
 | [`hexo`](hexo) | Hexo blog, served by nginx | base |
 | [`vitepress`](vitepress) | VitePress docs site, served by nginx | base |
+| [`docusaurus`](docusaurus) | Docusaurus 3 docs site, served by nginx | base |
 | [`nginx-static`](nginx-static) | Plain HTML and CSS, served by nginx | base |
 | [`go-gin`](go-gin) | Go with Gin | base |
 | [`spring-boot`](spring-boot) | Spring Boot 4.1 on Java 21 with Maven | base |

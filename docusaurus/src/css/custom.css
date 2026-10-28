@@ -1,0 +1,21 @@
+/* Theme colours for the classic theme. https://docusaurus.io/docs/styling-layout */
+:root {
+  --ifm-color-primary: #1d6b4f;
+  --ifm-color-primary-dark: #1a6047;
+  --ifm-color-primary-darker: #195b43;
+  --ifm-color-primary-darkest: #144b37;
+  --ifm-color-primary-light: #207657;
+  --ifm-color-primary-lighter: #217b5b;
+  --ifm-color-primary-lightest: #268b67;
+  --ifm-code-font-size: 95%;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #4fc596;
+  --ifm-color-primary-dark: #3fbb8a;
+  --ifm-color-primary-darker: #3bb183;
+  --ifm-color-primary-darkest: #30926c;
+  --ifm-color-primary-light: #66cda4;
+  --ifm-color-primary-lighter: #71d1aa;
+  --ifm-color-primary-lightest: #92dcbe;
+}

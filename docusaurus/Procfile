@@ -1,0 +1,1 @@
+web: sed -e "s/{{ *port *}}/${PORT:-8080}/g" -e "s#{{ *tempDir *}}#/tmp#g" -e "s#{{ *env \"APP_ROOT\" *}}#${APP_ROOT:-$PWD}#g" -e "s/port_in_redirect off;/port_in_redirect off; absolute_redirect off;/" nginx.conf > /tmp/nginx.conf && exec nginx -p "$PWD" -e stderr -c /tmp/nginx.conf -g "pid /tmp/nginx.pid;"

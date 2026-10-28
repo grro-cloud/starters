@@ -1,0 +1,33 @@
+{
+  "name": "grro-react-router-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "React Router (framework mode, formerly Remix) starter for Grro",
+  "scripts": {
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc",
+    "test": "npm run typecheck && npm run build && node --test"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "@react-router/node": "8.5.1",
+    "@react-router/serve": "8.5.1",
+    "isbot": "5.2.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router": "8.5.1"
+  },
+  "devDependencies": {
+    "@react-router/dev": "8.5.1",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}

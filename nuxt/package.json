@@ -1,0 +1,23 @@
+{
+  "name": "grro-nuxt-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Nuxt starter for Grro, running on Node",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "npm run build && node --test"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "nuxt": "4.6.3",
+    "vue": "3.5.44",
+    "vue-router": "5.4.0"
+  }
+}

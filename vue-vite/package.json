@@ -1,0 +1,25 @@
+{
+  "name": "grro-vue-vite-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vue + Vite static site starter for Grro",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "npm run build && node --test"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "vue": "3.5.44"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.10",
+    "typescript": "6.0.3",
+    "vite": "8.3.5",
+    "vue-tsc": "3.3.13"
+  }
+}

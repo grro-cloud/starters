@@ -1,0 +1,11 @@
+# Buildpack settings for Grro (Paketo Node.js on the base builder).
+# The Node.js version comes from "engines" in package.json and the start command
+# from the "start" script.
+[_]
+schema-version = "0.2"
+
+# "npm run build" (react-router build) runs at build time and writes the server and browser bundles to build/.
+# "npm start" then runs it on $PORT.
+[[io.buildpacks.build.env]]
+name = "BP_NODE_RUN_SCRIPTS"
+value = "build"
