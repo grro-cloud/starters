@@ -1,0 +1,20 @@
+# Paketo PHP (Grro builder "full"): nginx + PHP-FPM, runs as a non-root user
+# and listens on $PORT.
+[_]
+schema-version = "0.2"
+
+[[io.buildpacks.build.env]]
+name = "BP_PHP_SERVER"
+value = "nginx"
+
+[[io.buildpacks.build.env]]
+name = "BP_PHP_WEB_DIR"
+value = "htdocs"
+
+[[io.buildpacks.build.env]]
+name = "BP_COMPOSER_INSTALL_OPTIONS"
+value = "--no-dev --prefer-dist"
+
+[[io.buildpacks.build.env]]
+name = "BP_PHP_ENABLE_HTTPS_REDIRECT"
+value = "false"
