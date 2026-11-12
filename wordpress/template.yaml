@@ -1,0 +1,38 @@
+apiVersion: templates.usegrro.com/v1
+kind: Template
+id: wordpress
+name: "WordPress"
+tagline: "The blog and website builder, with a MySQL database you attach"
+description: |
+  WordPress on PHP with nginx, installed with Composer so updates are a commit. Attach a
+  Grro MySQL database as DATABASE_URL and the installer opens on your address. Add themes
+  and plugins to the repository, because the filesystem resets on restart, and use a storage
+  plugin for media.
+category: cms
+tags: [php, cms, blog]
+icon: icon.svg
+upstream:
+  url: https://github.com/WordPress/WordPress
+  license: GPL-2.0-or-later
+docs: https://wordpress.org/documentation/
+status: beta
+service:
+  source:
+    repo:
+      url: https://github.com/grro-cloud/starters
+      path: wordpress
+      revision: STARTERS_COMMIT
+      builder: full
+  protocol: http1
+  healthCheck: /healthz.php
+  minScale: 0
+  maxScale: 3
+  env:
+    AUTH_KEY: "${secret:64}"
+    SECURE_AUTH_KEY: "${secret:64}"
+    LOGGED_IN_KEY: "${secret:64}"
+    NONCE_KEY: "${secret:64}"
+    AUTH_SALT: "${secret:64}"
+    SECURE_AUTH_SALT: "${secret:64}"
+    LOGGED_IN_SALT: "${secret:64}"
+    NONCE_SALT: "${secret:64}"
