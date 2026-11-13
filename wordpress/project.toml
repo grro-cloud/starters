@@ -3,6 +3,12 @@
 [_]
 schema-version = "0.2"
 
+# PHP 8.4: the newest version WordPress fully supports (8.5 is still
+# "beta support" in WordPress 6.9).
+[[io.buildpacks.build.env]]
+name = "BP_PHP_VERSION"
+value = "8.4.*"
+
 [[io.buildpacks.build.env]]
 name = "BP_PHP_SERVER"
 value = "nginx"
